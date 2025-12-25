@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Utkarsh Tiwari | Software Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#020617;
+  --card:#020617;
+  --text:#e5e7eb;
+  --accent:#38bdf8;
+  --accent2:#22c55e;
+}
+.light{
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --text:#020617;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:Segoe UI,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:.3s;
+}
+.container{max-width:1200px;margin:auto;padding:30px;}
+header{
+  background:linear-gradient(135deg,#020617,#1e293b);
+  padding:30px;
+  border-radius:18px;
+}
+header h1{
+  margin:0;
+  font-size:36px;
+  background:linear-gradient(to right,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+header p{margin:10px 0;color:#cbd5f5}
+nav a{
+  margin-right:20px;
+  color:var(--text);
+  text-decoration:none;
+  font-size:14px;
+}
+nav a:hover{color:var(--accent)}
+.btn{
+  padding:10px 18px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(to right,var(--accent),var(--accent2));
+  color:#020617;
+  font-weight:600;
+}
+section{margin-top:70px;}
+section h2{color:var(--accent);font-size:26px;margin-bottom:15px;}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+.stat{
+  background:var(--card);
+  padding:25px;
+  border-radius:16px;
+  text-align:center;
+  border:1px solid #1e293b;
+}
+.stat h3{margin:0;color:var(--accent2);font-size:32px}
+.skills span{
+  display:inline-block;
+  margin:8px;
+  padding:10px 18px;
+  border-radius:30px;
+  background:var(--card);
+  border:1px solid var(--accent);
+}
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+.project{
+  background:var(--card);
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #1e293b;
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 40px rgba(56,189,248,.25);
+}
+.project img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.project div{padding:18px}
+.project a{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--accent2);
+  text-decoration:none;
+}
+footer{
+  margin-top:80px;
+  text-align:center;
+  color:#94a3b8;
+}
+.toggle{
+  float:right;
+  cursor:pointer;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <span class="toggle" onclick="toggleTheme()">🌗 Toggle Theme</span>
+  <h1>Utkarsh Tiwari</h1>
+  <p>Student • Software Developer • Building Interactive & AI Projects</p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <br>
+  <a class="btn" href="#" download>📄 Download Resume</a>
+</header>
+
+<section id="about">
+  <h2>Professional Summary</h2>
+  <p>
+    Passionate software developer building modern, efficient, and AI-powered
+    applications. Experienced in web technologies, automation, and problem-solving,
+    always eager to deliver high-quality projects.
+  </p>
+</section>
+
+<section class="stats">
+  <div class="stat"><h3>15+</h3><p>Projects</p></div>
+  <div class="stat"><h3>10+</h3><p>Technologies</p></div>
+  <div class="stat"><h3>2+</h3><p>Years Learning</p></div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>Python</span><span>Git</span><span>GitHub</span>
+    <span>AI / ML</span><span>Problem Solving</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Selected Projects</h2>
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="https://via.placeholder.com/400x250?text=Portfolio+Website" alt="Portfolio">
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>Professional portfolio website showcasing skills, projects, and experience.</p>
+        <a href="#" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="https://via.placeholder.com/400x250?text=AI+Chatbot" alt="AI Chatbot">
+      <div>
+        <h3>AI Chatbot</h3>
+        <p>Interactive chatbot built using Python and AI concepts for real-time conversation.</p>
+        <a href="#" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <img src="https://via.placeholder.com/400x250?text=Game+App" alt="Mini Game">
+      <div>
+        <h3>Mini Game App</h3>
+        <p>Browser-based interactive game with engaging UI and smooth gameplay.</p>
+        <a href="#" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+      <img src="https://via.placeholder.com/400x250?text=AI+Automation" alt="AI Automation">
+      <div>
+        <h3>AI Automation Tool</h3>
+        <p>Automation script using AI to improve workflow efficiency and productivity.</p>
+        <a href="#" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📧 <a href="mailto:ut839075@email.com" target="_blank">ut839075@email.com</a></p>
+  <p>💼 <a href="https://github.com/utkarxx" target="_blank">GitHub: utkarxx</a></p>
+  <p>📸 <a href="https://instagram.com/utkarxx__7" target="_blank">Instagram: utkarxx__7</a></p>
+</section>
+
+<footer>
+  © 2025 Utkarsh Tiwari | 
+  <a href="https://github.com/utkarxx" target="_blank">GitHub</a> | 
+  <a href="https://instagram.com/utkarxx__7" target="_blank">Instagram</a>
+</footer>
+
+</div>
+
+<script>
+function toggleTheme(){document.body.classList.toggle("light");}
+</script>
+
+</body>
+</html>
